@@ -48,6 +48,7 @@ sudo systemctl restart systemd-resolved
 ```bash
 mkdir pihole && cd pihole
 ```
+<img width="580" height="175" alt="Screenshot 2026-05-28 233758" src="https://github.com/user-attachments/assets/3cffeb19-486a-400c-b879-922f0f3ff83b" />
 
 ---
 
@@ -80,6 +81,7 @@ services:
       - './etc-dnsmasq.d:/etc/dnsmasq.d'
     restart: unless-stopped
 ```
+<img width="1109" height="622" alt="Screenshot 2026-05-28 233819" src="https://github.com/user-attachments/assets/99fc4c1e-6b22-47e5-b700-1c94443f4544" />
 
 > **Notes:**
 > - Port `8081` is used instead of `80` to avoid conflicts with other services (e.g., Coolify).
@@ -115,6 +117,7 @@ Open your browser and navigate to:
 ```
 http://<your-server-ip>:8081/admin
 ```
+<img width="1328" height="992" alt="Screenshot 2026-05-28 234003" src="https://github.com/user-attachments/assets/21e0f6a7-24cd-481a-8ac8-645ddf295b96" />
 
 Default credentials: `admin` (or whatever password you set above).
 
